@@ -1,0 +1,282 @@
+.contract_wrap {
+    .contract_content {
+        padding: 20px 10px;
+
+        .contract_head {
+            font-size: 15px;
+            font-weight: 600;
+
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                color: gray;
+            }
+
+            svg {
+                color: #0bcf86;
+                margin-top: -2px;
+            }
+
+            .icons {
+                color: gray;
+            }
+        }
+
+        .contract_info {
+            margin: 12px 0px 30px 0px;
+
+            hr {
+                margin: 0.7rem 0;
+            }
+        }
+
+        .contract_abi_div,
+        .contract_creation_div {
+            margin: 18px 0px 30px 0px;
+            height: 240px;
+            border: 1px solid #d1d1d1;
+            border-radius: 5px;
+            padding: 5px;
+            overflow-y: auto;
+            word-break: break-all;
+            font-size: 12px;
+            background: #fbfcff;
+        }
+
+        .deploy_bytecode_div {
+            margin: 18px 0px 30px 0px;
+            height: 100px;
+            border: 1px solid #d1d1d1;
+            border-radius: 5px;
+            padding: 5px;
+            overflow-y: auto;
+            word-break: break-all;
+            font-size: 12px;
+            background: #fbfcff;
+        }
+
+        .swarm_div {
+            margin: 18px 0px 30px 0px;
+            border: 1px solid #d1d1d1;
+            border-radius: 5px;
+            padding: 10px 10px;
+            overflow-y: auto;
+            word-break: break-all;
+            font-size: 13px;
+            background: #fbfcff;
+        }
+
+        textarea {
+            font-size: 13px;
+            background: #fbfcff;
+        }
+
+        .contract_div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                padding: 1px 6px;
+                text-align: center;
+
+                svg {
+                    margin-top: -3px;
+                    padding: 1px;
+                }
+            }
+        }
+    }
+
+    .inner_tabs_of_contract {
+        .nav.nav-tabs {
+            border: none;
+
+            .nav-item {
+                .nav-link {
+                    border: 1px solid;
+                    border-radius: 5px;
+                    margin: 0px .5em;
+                    padding: 0.3em 1em;
+                    background-color: #607d8b26;
+                    color: #607d8b;
+                    font-weight: 500;
+                }
+
+                .nav-link.active {
+                    border: 1px solid;
+                    background-color: #c619ae1c;
+                }
+            }
+        }
+    }
+
+
+    .read_contract_section,
+    .write_contract_section {
+        margin: 3em 0em;
+
+        .accordion {
+            .accordion-item {
+                margin: 1em 0em;
+                border-radius: 5px;
+
+                .accordion-button {
+                    background-color: #e7ecee;
+                    border: none;
+                    color: #3c5a68;
+                    border-radius: 5px;
+                    padding: 0.8em 1em;
+                    font-size: 14px;
+                }
+
+                .accordion-button:focus {
+                    box-shadow: none;
+                }
+
+                // .accordion-button::after {
+                //     filter: invert(1) brightness(14) !important;
+                // }
+                .accordion-button:not(.collapsed)::after {
+                    filter: grayscale(1) !important;
+                }
+
+                .read_input_div {
+                    .name_field {
+                        font-size: 13px;
+                        margin: .8em 0em;
+                    }
+
+                    input {
+                        padding: 2px 15px;
+                        font-size: 13px;
+                        width: 100%;
+                        border: 1px solid #d1d9dc;
+                        border-radius: 4px;
+                    }
+
+                }
+
+                .query_btn {
+                    padding: 0.2em 1em;
+                    margin: 1em 0em;
+                    border: 1px solid #c0c6c9;
+                    border-radius: 4px;
+                }
+
+                .view_trans {
+                    color: #c50cb1 !important;
+                    border: 1px solid #c50cb1;
+                    border-radius: 4px;
+                    background-color: rgba(198, 25, 174, 0.1098039216);
+                    padding: 0.2em 1em;
+                    margin-left: 0.8em;
+                }
+
+                .query_response {
+
+                    .readContract_error, .writeContract_error {
+                        color: red;
+                        font-size: 13px;
+                        word-break: break-all;
+                    }
+
+                    .result {
+                        color: green;
+                        font-weight: 600;
+                    }
+
+                    .metaMask_error {
+                        color: red;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .connect_to_web3 {
+            padding: 0.2em 1em;
+            border: 1px solid #adbdc3;
+            border-radius: 4px;
+
+            svg {
+                width: 20px;
+                margin-right: 5px;
+
+                .st0 {
+                    fill: #E2761B;
+                    stroke: #E2761B;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+
+                .st1 {
+                    fill: #E4761B;
+                    stroke: #E4761B;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+
+                .st2 {
+                    fill: #D7C1B3;
+                    stroke: #D7C1B3;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+
+                .st3 {
+                    fill: #233447;
+                    stroke: #233447;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+
+                .st4 {
+                    fill: #CD6116;
+                    stroke: #CD6116;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+
+                .st5 {
+                    fill: #E4751F;
+                    stroke: #E4751F;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+
+                .st6 {
+                    fill: #F6851B;
+                    stroke: #F6851B;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+
+                .st7 {
+                    fill: #C0AD9E;
+                    stroke: #C0AD9E;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+
+                .st8 {
+                    fill: #161616;
+                    stroke: #161616;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+
+                .st9 {
+                    fill: #763D16;
+                    stroke: #763D16;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+            }
+        }
+    }
+}
+
+.tooltip {
+    font-size: 11px;
+}
